@@ -1,0 +1,10 @@
+.venv/
+venv/
+data/
+__pycache__/
+*.pyc
+*.log
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+.claude.json*
