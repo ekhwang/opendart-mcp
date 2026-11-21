@@ -755,7 +755,8 @@ def get_audit_report(corp: str, bsns_year: int, consolidated: bool = False,
     if "summary" in want:
         out.append("\n## 요약")
         out.append(f"- 감사의견(본문 판독): {info['opinion']}")
-        kam_s = ("있음 " + str(len(info["kam_titles"])) + "건 - " + " / ".join(info["kam_titles"])) if info["has_kam"] else "없음"
+        kam_s = (("있음 " + str(len(info["kam_titles"])) + "건 - " + " / ".join(info["kam_titles"])) if info["kam_titles"]
+                 else "있음 (제목 자동판독 실패 - kam 섹션 참조)") if info["has_kam"] else "없음"
         out.append(f"- 핵심감사사항: {kam_s}")
         out.append(f"- 강조사항 문단: {'있음' if info['has_emphasis'] else '없음'}   기타사항 문단: {'있음' if info['has_other_matter'] else '없음'}")
         out.append(f"- 계속기업 관련 중요한 불확실성 언급: {'있음' if info['going_concern_uncertainty'] else '없음'}")

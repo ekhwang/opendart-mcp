@@ -9,7 +9,7 @@
       "name": "opendart",
       "source": "./",
       "description": "금융감독원 DART 전자공시 MCP — 공시·재무제표·감사보고서 본문(KAM·강조사항·계속기업·내부회계) 열람과 상장사 전수 스크리닝. OpenDART 개인 키로 로컬 실행.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "ekhwang"
       },

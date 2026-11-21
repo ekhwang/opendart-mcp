@@ -1,6 +1,6 @@
 {
   "name": "opendart",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "금융감독원 DART 전자공시 MCP — 회사명→고유번호 변환, 공시목록, 재무제표, 감사보고서 본문(핵심감사사항·강조사항·계속기업·내부회계) 문단별 열람, 상장사 전수 인덱스 기반 조건별 스크리닝. OpenDART 개인 인증키로 각자 PC에서 독립 실행.",
   "author": {
     "name": "ekhwang",
@@ -9,11 +9,25 @@
   "homepage": "https://github.com/ekhwang/opendart-mcp",
   "repository": "https://github.com/ekhwang/opendart-mcp",
   "license": "MIT",
-  "keywords": ["dart", "opendart", "공시", "감사보고서", "핵심감사사항", "내부회계관리제도", "재무제표", "mcp", "accounting"],
+  "keywords": [
+    "dart",
+    "opendart",
+    "공시",
+    "감사보고서",
+    "핵심감사사항",
+    "내부회계관리제도",
+    "재무제표",
+    "mcp",
+    "accounting"
+  ],
   "mcpServers": {
     "opendart": {
       "command": "python",
-      "args": ["-X", "utf8", "${CLAUDE_PLUGIN_ROOT}/run_server.py"],
+      "args": [
+        "-X",
+        "utf8",
+        "${CLAUDE_PLUGIN_ROOT}/run_server.py"
+      ],
       "env": {
         "OPENDART_API_KEY": "${user_config.api_key}",
         "PYTHONUTF8": "1"

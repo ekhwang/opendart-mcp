@@ -31,7 +31,7 @@ Claude Code 입력창에서:
 python "$env:USERPROFILE\.claude\plugins\cache\opendart-mcp\opendart\1.0.0\run_server.py" --setup
 ```
 
-Claude Code를 다시 열면 `opendart` 도구가 보입니다. 가상환경과 데이터는 `~/.opendart-mcp/` 아래에 생성됩니다.
+경로의 `1.0.1`은 설치된 플러그인 버전입니다(`claude plugin list`로 확인). Claude Code를 다시 열면 `opendart` 도구가 보입니다. 가상환경과 데이터는 `~/.opendart-mcp/` 아래에 생성됩니다.
 
 ### 미리 구축된 스크리닝 인덱스 내려받기 (권장)
 
